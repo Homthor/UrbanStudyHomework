@@ -6,7 +6,7 @@ class House:
         self.floors = number_of_floors
 
     def go_to(self, floor_required):
-        if floor_required <= self.floors:
+        if self.floors >= floor_required >= 1:
             for current_floor in range(floor_required):
                 print('Этаж', current_floor + 1)
                 sleep(1)
