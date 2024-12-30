@@ -9,7 +9,7 @@ class House:
         if self.floors >= floor_required >= 1:
             for current_floor in range(floor_required):
                 print('Этаж', current_floor + 1)
-                sleep(1)
+                sleep(1) #задача напомнила лифт, поэтому поставил задержку
         else:
             print('Такого этажа не существует для:', self.name)
 
